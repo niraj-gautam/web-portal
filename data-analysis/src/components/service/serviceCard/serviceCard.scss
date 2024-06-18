@@ -1,0 +1,37 @@
+.service-card {
+    background-color: var(--white-1);
+    padding: 20px 15px;
+    border: 1px solid var(--platinum);
+    border-radius: var(--radius-5);
+    text-align: center;
+    box-shadow: var(--shadow-1);
+    transition: var(--transition-2);
+}
+
+.service-card:is(:hover, :focus-within) {
+    transform: translateY(-10px);
+}
+
+.service-card .card-icon {
+    color: var(--white-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: #13c4a1;
+    max-width: max-content;
+    margin-inline: auto;
+    padding: 18px;
+    border-radius: 50%;
+
+    .icon {
+        font-size: 25px;
+    }
+}
+
+.service-card .card-title {
+    margin-block: 20px 8px;
+}
+
+.service-card .card-text {
+    font-size: var(--fs-6);
+}

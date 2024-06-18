@@ -1,0 +1,28 @@
+.btn {
+    max-width: max-content;
+    color: var(--white-1);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-700);
+    padding: 10px 30px;
+    border-radius: var(--radius-5);
+    transition: var(--transition-1);
+
+    &.btn-primary {
+        background-image: var(--gradient);
+        background-size: 1000%;
+
+        &.btn-primary:is(:hover, :focus) {
+            background-position: bottom right;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: var(--white-1);
+        color: var(--eerie-black);
+
+        &.btn-secondary:is(:hover, :focus) {
+            background-color: var(--eerie-black);
+            color: var(--white-1);
+        }
+    }
+}
